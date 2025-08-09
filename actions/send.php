@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           . "✉️ Сообщение: $message";
 
     $botToken = '8439190107:AAGjjNyC-9gSoZN7pVPNdKrfotZc9__SuO8';
-    $chatId = '1065497898'; 
+    $chatId = ''; 
 
     $url = "https://api.telegram.org/bot$botToken/sendMessage";
     $data = [
