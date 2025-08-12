@@ -158,14 +158,12 @@ path {
 
 /* Контакты */
 /* Банер */
-.baner {
-    background: url(../images/baner/baner.png) no-repeat center;
+.preview {
+    background: url(../images/Preview/baner.png) no-repeat center;
     background-size: cover;
 }
 
-
-
-.baner-img {
+.Preview-img {
     display: flex;
     position: relative;
     width: 350px;
@@ -173,7 +171,7 @@ path {
     z-index: 2;
 }
 
-.slider{
+.slider {
     display: flex;
     width: 350px;
     height: 500px;
@@ -181,24 +179,25 @@ path {
     position: relative;
 }
 
-.track{
+.track {
     position: absolute;
     transition: .5s ease;
 }
-.track-in{
+
+.track-in {
     display: flex;
     gap: 20px;
 }
 
 
-.baner-img img {
+.Preview-img img {
     width: 350px;
     height: 490px;
     object-fit: cover;
     transform: translateX(10px) translateY(10px);
 }
 
-.baner-img::after {
+.Preview-img::after {
     content: '';
     position: absolute;
     top: 0;
@@ -209,20 +208,22 @@ path {
     z-index: 1;
 }
 
-.baner-img:nth-child(1)::after{
-    background: url(../images/baner/afisha.png) no-repeat center;
-    background-size: cover; 
-}
-.baner-img:nth-child(2)::after{
-    background: url(../images/baner/37bacaf6b6da625cec1483b91a952c02.jpg) no-repeat center;
-    background-size: cover;
-}
-.baner-img:nth-child(3)::after{
-    background: url(../images/baner/bf4f0677a2aa74c9efb31dd2ed91a08b.jpg) no-repeat center;
+.Preview-img:nth-child(1)::after {
+    background: url(../images/Preview/afisha.png) no-repeat center;
     background-size: cover;
 }
 
-.baner-arrows {
+.Preview-img:nth-child(2)::after {
+    background: url(../images/Preview/37bacaf6b6da625cec1483b91a952c02.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.Preview-img:nth-child(3)::after {
+    background: url(../images/Preview/bf4f0677a2aa74c9efb31dd2ed91a08b.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.Preview-arrows {
     display: flex;
     justify-content: space-between;
     padding-top: 35px;
@@ -246,26 +247,26 @@ path {
     cursor: pointer;
 }
 
-.baner-info {
+.Preview-info {
     padding: 270px 0px;
     display: flex;
     gap: 125px;
 }
 
-.baner-left {
+.Preview-left {
     display: flex;
     flex-direction: column;
     gap: 50px;
     align-items: start;
 }
 
-.baner-left p {
+.Preview-left p {
     font-size: 14px;
     width: 520px;
     color: white;
 }
 
-.baner-btn {
+.Preview-btn {
     border: 1px solid #D1A954;
     padding: 18px 47px;
     transition: .1s;
@@ -274,7 +275,7 @@ path {
     font-weight: bold;
 }
 
-.baner-btn:hover {
+.Preview-btn:hover {
     background-color: #D1A954;
 }
 
@@ -583,7 +584,7 @@ footer {
         gap: 50px;
     }
 
-    .baner-right {
+    .Preview-right {
         display: none;
     }
 
@@ -670,15 +671,18 @@ footer {
     [for=burger]::after {
         content: '≡';
         font-size: 50px;
-        color: white;        
+        color: white;
     }
-    #burger:checked + [for=burger]::after {
+
+    #burger:checked+[for=burger]::after {
         content: 'X';
     }
-    #burger:checked + [for=burger]{
+
+    #burger:checked+[for=burger] {
         left: 270px;
     }
-    #burger:checked + [for=burger] + nav{
+
+    #burger:checked+[for=burger]+nav {
         z-index: 99;
         display: flex;
         justify-content: center;
@@ -701,15 +705,19 @@ footer {
         max-width: 500px;
         overflow: hidden;
     }
-    .contacts{
+
+    .contacts {
         display: none;
     }
+
     nav {
         display: none;
     }
-    .none{
+
+    .none {
         display: block;
     }
+
     .header {
         flex-direction: row;
         justify-content: space-between;
@@ -725,15 +733,18 @@ footer {
     [for=burger]::after {
         content: '≡';
         font-size: 50px;
-        color: white;        
+        color: white;
     }
-    #burger:checked + [for=burger]::after {
+
+    #burger:checked+[for=burger]::after {
         content: 'X';
     }
-    #burger:checked + [for=burger]{
+
+    #burger:checked+[for=burger] {
         left: 270px;
     }
-    #burger:checked + [for=burger] + nav{
+
+    #burger:checked+[for=burger]+nav {
         z-index: 99;
         display: flex;
         justify-content: center;
@@ -747,7 +758,8 @@ footer {
         width: 60vw;
         font-size: 24px;
     }
-    .baner-right {
+
+    .Preview-right {
         display: none;
     }
 
@@ -804,15 +816,18 @@ footer {
         flex-direction: column;
         gap: 80px;
     }
-    .about-info{
+
+    .about-info {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    .galery-grid{
+
+    .galery-grid {
         padding-left: 40px;
     }
-    form{
+
+    form {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -821,13 +836,15 @@ footer {
         grid-column-start: 1;
         grid-column-end: 3;
     }
-    .form-send{
+
+    .form-send {
         flex-direction: column;
         text-align: center;
         align-items: center;
         gap: 30px;
     }
-    .form-send span{
+
+    .form-send span {
         order: 2;
     }
 

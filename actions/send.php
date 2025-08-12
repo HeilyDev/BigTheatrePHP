@@ -7,14 +7,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'] ?? '';
 
     $text = "📌 Новое сообщение с формы:\n\n"
-          . "👤 Имя: $name\n"
-          . "🏢 Компания: $company\n"
-          . "📩 Email: $email\n"
-          . "📞 Телефон: $phone\n"
-          . "✉️ Сообщение: $message";
+        . "👤 Имя: $name\n"
+        . "🏢 Компания: $company\n"
+        . "📩 Email: $email\n"
+        . "📞 Телефон: $phone\n"
+        . "✉️ Сообщение: $message";
 
-    $botToken = '8439190107:AAGjjNyC-9gSoZN7pVPNdKrfotZc9__SuO8';
-    $chatId = '1065497898'; 
+    $botToken = getenv('TELEGRAM_BOT_TOKEN');
+    $chatId = getenv('CHAT_ID');
 
     $url = "https://api.telegram.org/bot$botToken/sendMessage";
     $data = [

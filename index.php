@@ -69,34 +69,34 @@
     </div>
     <!-- Контакты -->
     <!-- Банер -->
-    <div class="baner">
+    <div class="preview">
         <div class="container">
-            <div class="baner-info">
-                <div class="baner-left">
+            <div class="Preview-info">
+                <div class="Preview-left">
                     <h1>Большой театр</h1>
                     <p>Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с 1886 года —
                         Петербургская
                         консерватория. Первое постоянное в Санкт-Петербурге, крупнейшее в России и одно из крупнейших
                         театральных зданий в Европе XVIII.</p>
-                    <a href="" class="baner-btn">афиша</a>
+                    <a href="" class="Preview-btn">афиша</a>
                 </div>
-                <div class="baner-right">
+                <div class="Preview-right">
                     <div class="slider">
                         <div class="track">
                             <div class="track-in">
-                                <div class="baner-img">
-                                    <img src="images/baner/afisha_yellow.png" alt="">
+                                <div class="Preview-img">
+                                    <img src="images/Preview/afisha_yellow.png" alt="">
                                 </div>
-                                <div class="baner-img">
-                                    <img src="images/baner/afisha_yellow.png" alt="">
+                                <div class="Preview-img">
+                                    <img src="images/Preview/afisha_yellow.png" alt="">
                                 </div>
-                                <div class="baner-img">
-                                    <img src="images/baner/afisha_yellow.png" alt="">
+                                <div class="Preview-img">
+                                    <img src="images/Preview/afisha_yellow.png" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="baner-arrows">
+                    <div class="Preview-arrows">
                         <div class="arrow arrowBack">
                             <svg width="41" height="16" viewBox="0 0 41 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
