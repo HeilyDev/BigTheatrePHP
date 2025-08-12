@@ -13,13 +13,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         . "📞 Телефон: $phone\n"
         . "✉️ Сообщение: $message";
 
-<<<<<<< HEAD
     $botToken = getenv('TELEGRAM_BOT_TOKEN');
     $chatId = getenv('CHAT_ID');
-=======
-    $botToken = '8439190107:AAGjjNyC-9gSoZN7pVPNdKrfotZc9__SuO8';
-    $chatId = ''; 
->>>>>>> 6c9cf93875cfe7b9102b20c7b80b085f14e5c9c4
 
     $url = "https://api.telegram.org/bot$botToken/sendMessage";
     $data = [
